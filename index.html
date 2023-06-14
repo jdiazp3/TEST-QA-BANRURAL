@@ -29,7 +29,7 @@
 
 <div class="form">
   <label for="guessField">Ingresa el número a adivinar: </label><input type="text" id="guessField" class="guessField">
-  <input type="submit" value="Ingresar el número aleatorio" class="guessSubmit">
+  <input type="submit" value="Ingresar el número aleatorio" class="guessSubmit" onclick="checkGuess()">  
 </div>
 
 <div class="resultParas">
@@ -46,7 +46,7 @@
   const ATTEMPS = 5;
   const guesses = document.querySelector('.guesses');
   const lastResult = document.querySelector('.lastResult');
-  const lowOrHi = document.querySelector('lowOrHi');
+  const lowOrHi = document.querySelector('.lowOrHi');
   const guessSubmit = document.querySelector('.guessSubmit');
   const guessField = document.querySelector('.guessField');
 
